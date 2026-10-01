@@ -1,0 +1,119 @@
+/* ---------- Base (2005 look) ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  background: #dfe8f1;
+  font-family: Verdana, Tahoma, Arial, sans-serif;
+  font-size: 12px;
+  color: #333;
+}
+
+a { color: #0b4f9c; }
+a:hover { color: #e06a00; }
+
+#wrapper {
+  width: 400px;
+  max-width: 94%;
+  margin: 40px auto;
+}
+
+/* ---------- Header ---------- */
+#header {
+  background: #1d5ea8;
+  background: linear-gradient(#4a8fd6, #1d5ea8);
+  border: 1px solid #12427a;
+  border-bottom: 3px solid #e06a00;
+  padding: 14px 18px;
+  color: #fff;
+}
+#header h1 {
+  margin: 0;
+  font: bold 28px Georgia, "Times New Roman", serif;
+  letter-spacing: -1px;
+}
+#header h1 span { color: #ffd27a; }
+#header p {
+  margin: 2px 0 0;
+  font-size: 10px;
+  color: #cfe0f5;
+}
+
+/* ---------- Login box ---------- */
+#login-box {
+  background: #fff;
+  border: 1px solid #9db3cc;
+  border-top: 0;
+  padding: 18px 22px 12px;
+}
+#login-box h2 {
+  margin: 0 0 12px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #9db3cc;
+  font-size: 14px;
+  color: #12427a;
+}
+
+label {
+  display: block;
+  margin: 10px 0 3px;
+  font-weight: bold;
+}
+label.inline { display: inline; font-weight: normal; }
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4px;
+  border: 1px solid #7f9db9;
+  font: 12px Verdana, Tahoma, sans-serif;
+  background: #fff;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: 0;
+  background: #fffbe6;
+  border-color: #e06a00;
+}
+
+.remember { margin: 10px 0 14px; font-size: 11px; }
+
+/* Classic beveled button */
+.button {
+  padding: 4px 22px;
+  font: bold 12px Verdana, Tahoma, sans-serif;
+  color: #fff;
+  background: #2a6fbf;
+  background: linear-gradient(#5a9be0, #2a6fbf);
+  border: 1px solid #12427a;
+  cursor: pointer;
+}
+.button:hover { background: linear-gradient(#e89a3c, #e06a00); border-color: #a04a00; }
+.button:active { padding: 5px 21px 3px 23px; }
+
+/* ---------- Message ---------- */
+.message {
+  display: none;
+  margin: 0 0 4px;
+  padding: 6px 8px;
+  font-size: 11px;
+  border: 1px solid;
+}
+.message.error { display: block; color: #a00; background: #fff0f0; border-color: #e0a0a0; }
+.message.ok    { display: block; color: #060; background: #f0fff0; border-color: #a0d0a0; }
+
+/* ---------- Links & footer ---------- */
+.links {
+  margin: 16px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px dotted #9db3cc;
+  list-style: none;
+  font-size: 11px;
+}
+.links li { margin-bottom: 4px; }
+
+#footer {
+  text-align: center;
+  font-size: 10px;
+  color: #6b7f96;
+}

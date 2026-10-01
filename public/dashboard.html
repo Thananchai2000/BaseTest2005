@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Factory Monitor - MyPortal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="app">
+
+  <div id="topbar">
+    <h1>My<span>Portal</span> <small>Factory Monitor</small></h1>
+    <div id="userbox">
+      <span id="who">...</span> |
+      <a href="#" id="logout">Logout</a>
+    </div>
+  </div>
+
+  <div id="content">
+    <p id="error" class="message"></p>
+
+    <div class="panel">
+      <h2>Plant Summary <span class="stamp" id="stamp"></span></h2>
+      <table class="kpi">
+        <tr>
+          <td><span class="label">Produced today</span><span class="value" id="k-produced">-</span><span class="sub" id="k-target"></span></td>
+          <td><span class="label">OEE</span><span class="value" id="k-oee">-</span><span class="sub">overall equipment effectiveness</span></td>
+          <td><span class="label">Defects</span><span class="value" id="k-defects">-</span><span class="sub" id="k-defrate"></span></td>
+          <td><span class="label">Machines running</span><span class="value" id="k-running">-</span><span class="sub" id="k-total"></span></td>
+          <td><span class="label">Energy</span><span class="value" id="k-energy">-</span><span class="sub">kWh today</span></td>
+        </tr>
+      </table>
+      <div class="bar"><div id="progress"></div></div>
+    </div>
+
+    <div class="panel">
+      <h2>Machine Status</h2>
+      <table class="grid" id="machines">
+        <thead>
+          <tr><th>ID</th><th>Line</th><th>Machine</th><th>Status</th><th>Temp (&deg;C)</th><th>Speed (rpm)</th><th>Count</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>Recent Alarms &amp; Events</h2>
+      <table class="grid" id="alarms">
+        <thead><tr><th>Time</th><th>Level</th><th>Message</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <p id="footer">Data is simulated &bull; refreshes every 2 seconds</p>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

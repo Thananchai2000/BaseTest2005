@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Member Login - MyPortal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="wrapper">
+    <div id="header">
+      <h1>My<span>Portal</span></h1>
+      <p>Your gateway to the web &bull; est. 2005</p>
+    </div>
+
+    <div id="login-box">
+      <h2>Member Login</h2>
+
+      <form id="login-form" action="#" method="post" novalidate>
+        <p id="message" class="message" role="alert"></p>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" autocomplete="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required>
+
+        <p class="remember">
+          <input type="checkbox" id="remember" name="remember">
+          <label for="remember" class="inline">Remember me on this computer</label>
+        </p>
+
+        <input type="submit" value="Login" class="button">
+      </form>
+
+      <ul class="links">
+        <li><a href="#">Forgot your password?</a></li>
+        <li><a href="#">New user? Register here</a></li>
+      </ul>
+    </div>
+
+    <div id="footer">
+      <p>Best viewed at 1024 x 768 &bull; &copy; 2005 MyPortal. All rights reserved.</p>
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
